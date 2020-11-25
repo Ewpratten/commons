@@ -1,4 +1,4 @@
-package main.java.ca.retrylife.commons.math;
+package ca.retrylife.commons.math;
 
 /**
  * 1-Dimensional Interpolation
