@@ -10,6 +10,6 @@ test_suite(
     name = "tests",
     tests = [
         "//java:tests",
-        "//pycommons_test:tests",
+        "//python:pycommons_test",
     ],
 )

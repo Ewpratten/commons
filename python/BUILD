@@ -26,9 +26,15 @@ py_library(
 py_test(
     name = "pycommons_test",
     srcs = glob([
-        "pycommons/*_test.py",
-        "pycommons/**/*_test.py",
+        "tests/*_test.py",
+        "tests/**/*_test.py",
     ]),
+    imports = [
+        ":pycommons",
+    ],
+    deps = [
+        ":pycommons",
+    ],
 )
 
 pypi_package(

@@ -1,4 +1,4 @@
-name: Build
+name: Test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  build_java:
+  test_java:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,9 +29,9 @@ jobs:
           sudo apt-get update -y
       - name: Build App
         run: |
-          bazel build //java
+          bazel test //java:tests
 
-  build_python:
+  test_python:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -53,4 +53,4 @@ jobs:
           sudo apt-get update -y
       - name: Build App
         run: |
-          bazel build //python
+          bazel test //python:pycommons_test
