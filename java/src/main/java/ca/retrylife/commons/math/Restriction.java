@@ -1,4 +1,4 @@
-package main.java.ca.retrylife.commons.math;
+package ca.retrylife.commons.math;
 
 /**
  * Utilities for restricting a value between two bounds
