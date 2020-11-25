@@ -32,7 +32,7 @@ public class Angles {
      * @return Closest distance
      */
     public static double getWrappedErrorRadians(double current, double desired) {
-        return Math.toRadians(getWrappedErrorDegrees(Math.toDegrees(current), Math.toDegrees(desired)))
+        return Math.toRadians(getWrappedErrorDegrees(Math.toDegrees(current), Math.toDegrees(desired)));
     }
 
 }
