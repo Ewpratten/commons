@@ -1,0 +1,7 @@
+jdk:
+  - openjdk11
+before_install:
+   - ./tools/scripts/ci/jitpack_setup.sh
+install:
+   - echo "Running a custom install command"
+   - ./tools/scripts/ci/jitpack.sh
